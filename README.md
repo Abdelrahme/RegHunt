@@ -19,7 +19,8 @@ A Python tool for searching Windows Registry hives (live system or offline files
 
 - Python 3
 - Windows (for live registry access) or Linux/macOS (offline hive scanning supported)
-- `python-registry` module for offline hive parsing: ```pip install python-registry```
+- `python-registry` module for offline hive parsing:
+- ```pip install python-registry```
 
 ---
 
