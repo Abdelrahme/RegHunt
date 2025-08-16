@@ -31,7 +31,7 @@ pip install python-registry
 ## Usage
 
 ```bash
-python3 main.py -i <keyword> [options]
+python3 RegHunt.py -i <keyword> [options]
 ```
 
 ### Options
@@ -50,13 +50,13 @@ python3 main.py -i <keyword> [options]
 Search live registry for `notepad.exe` (Windows only):
 
 ```bash
-python3 main.py -i notepad.exe --live -f csv -o results
+python3 RegHunt.py -i notepad.exe --live -f csv -o results
 ```
 
 Search offline hive directory with regex for IP addresses:
 
 ```bash
-python3 main.py -i "\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b" -d ./hives --regex -f json -o ip_results
+python3 RegHunt.py -i "\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b" -d ./hives --regex -f json -o ip_results
 ```
 
 ---
@@ -80,7 +80,7 @@ If no results are found, nothing is saved.
 To create a standalone executable (Windows recommended):
 
 ```bash
-pyinstaller --onefile main.py
+pyinstaller --onefile RegHunt.py
 ```
 
 This produces `dist/main.exe` on Windows or `dist/main` on Linux/macOS.
